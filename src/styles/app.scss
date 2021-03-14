@@ -61,16 +61,27 @@ $title-color: #000000cc;
       flex-direction: column;
       border-bottom: 1px solid $secondary-color;
       border-top: 1px solid $secondary-color;
-      .text {
-        padding-top: 15px;
-      }
+      
       .items {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        img {
+        .text {
+          padding-top: 30px;
+          width: 30%;
+        }
+
+        .product-img{
+          width: 25%;
+          img {
+            width: 90%;
+
+          }
+        }
+        .province{
           width: 20%;
         }
+        
       }
     }
     .single-product-container {
