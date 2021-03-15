@@ -8,7 +8,6 @@ router.get("/", async (req, res, next) => {
   res.json({
     author: { name: "Marcos", lastname: "Millas" },
     categories: data.filters,
-    data: data,
     items: data.results.map((item) => {
       return {
         id: item.id,
@@ -34,6 +33,7 @@ router.get("/:id", async (req, res, next) => {
     item: {
       id: item.id,
       title: item.title,
+      categories: item.category_id,
       price: {
         currency: item.currency_id,
         amount: item.price,

@@ -22,7 +22,7 @@ const getItemDescriptionById = async (id) => {
   return makeRequest(url);
 };
 
-const getFullItemById = async (id) => {
+const getFullItemById = async (id, categoryId) => {
   const item = await getItemById(id);
   const description = await getItemDescriptionById(id);
   const data = { ...item, description };
