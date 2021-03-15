@@ -1,16 +1,16 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import "./styles/app.scss"; /*Todo: CAMBIAR ESTA LINEA DE CODIGO PARA VER COMO APLICAR A CADA PÁGINA UN ESTILO DISTINTO */
+import "./styles/app.scss";
 import Search from "./components/Search";
 import ProductList from "./components/ProductList";
-import Product from "./components/Product";
+import ProductDetail from "./components/ProductDetail";
 
 function App() {
   return (
     <Switch>
       <Route exact path="/" component={Search} />
       <Route exact path="/items" component={ProductList} />
-      <Route exact path="/items/:id" component={Product} />
+      <Route exact path="/items/:id" component={ProductDetail} />
     </Switch>
   );
 }
