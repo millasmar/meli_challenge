@@ -5,11 +5,11 @@ const makeRequest = async (url) => {
 };
 
 export const getItemById = async (id) => {
-  const url = `http://localhost:8080/api/items/${id}`;
+  const url = `https://meli-challenge-server.herokuapp.com/api/items/${id}`;
   return makeRequest(url);
 };
 
 export const searchItems = async (slug) => {
-  const url = `http://localhost:8080/api/items?q=${slug}`;
+  const url = `https://meli-challenge-server.herokuapp.com/api/items?q=${slug}`;
   return makeRequest(url);
 };
